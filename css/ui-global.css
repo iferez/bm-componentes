@@ -23,6 +23,7 @@
   --color-sky-blue: #0f9eda;
   --color-blue-main-x: #1e43e7;
   --color-section-grey: #ebebea;
+  --color-pink-bresh: #ff69b4;
 }
 *,
 ::before ::after {
@@ -170,7 +171,7 @@ h6 {
   background-color: var(--color-sky-blue);
 }
 
-/* WELCOME KIT - NO ALINEADO A DS VERIFICAR */
+/* WELCOME / BRESH - NO ALINEADO A DS VERIFICAR */
 .btn-bm-blue {
   background-color: var(--color-blue-main-x);
   color: var(--color-white);
@@ -198,6 +199,10 @@ h6 {
 }
 .bg-blue {
   background-color: var(--color-blue-main-x);
+}
+.bg-bresh {
+  background-color: var(--color-pink-bresh)!important;
+  color: var(--color-white);
 }
 .color-blue {
   color: var(--color-blue-main-x);

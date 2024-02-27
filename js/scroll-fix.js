@@ -12,7 +12,7 @@ function scrollToTop() {
 }
 
 function handleScroll() {
-    const height_activate = 400;
+    const height_activate = 400.255;
     const button = document.querySelector('.scroll-to-top');
     const header = document.querySelector('header');
     const containerHeader = document.querySelector('.container-header');
@@ -24,6 +24,6 @@ function handleScroll() {
     containerHeader.classList.toggle('container', activateScroll);
 }
 
-const debouncedScroll = debounce(handleScroll, 100); // Retraso para evitar muchas ejecuciones
+const debouncedScroll = debounce(handleScroll, 300); // Retraso para evitar muchas ejecuciones
 window.onscroll = debouncedScroll;
 document.addEventListener('DOMContentLoaded', handleScroll);
