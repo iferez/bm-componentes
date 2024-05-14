@@ -5,12 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var pasosSliderOn = verifySlider("slider-pasos", 5);
     var productosSliderOn = verifySlider("slider-productos", 5);
     var gestionSliderOn = verifySlider("slider-gestion", 5);
+    var gestionSliderOn = verifySlider("slider-nuevo", 5);
+    
 
     /* Armo o desarmo el slider - envio ID + validacion  */
     toggleSlider("slider-promo", promoSliderOn);
     toggleSlider("slider-pasos", pasosSliderOn);
     toggleSlider("slider-productos", productosSliderOn);
     toggleSlider("slider-gestion", gestionSliderOn);
+    toggleSlider("slider-nuevo", gestionSliderOn);
   }
 
   function verifySlider(sliderId, slidesToShow) {
@@ -21,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     var children = Array.from(sliderWrapper.childNodes).filter(node => node.nodeType === 1);
     return (
-        children.length >= slidesToShow || window.innerWidth < 996
+        children.length >= slidesToShow || window.innerWidth < 992
     );
 }
 
@@ -55,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         focusOnSelect: true,
         variableWidth: true,
-        arrows: false,
+        arrows: true,
         dots: true,
         responsive: [
           {

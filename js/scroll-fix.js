@@ -12,18 +12,19 @@ function scrollToTop() {
 }
 
 function handleScroll() {
-    const height_activate = 400.255;
     const button = document.querySelector('.scroll-to-top');
     const header = document.querySelector('header');
-    const containerHeader = document.querySelector('.container-header');
+    const height_activate = 400;
 
-    const activateScroll = document.body.scrollTop > height_activate || document.documentElement.scrollTop > height_activate;
-
-    button.classList.toggle('show', activateScroll);
-    header.classList.toggle('fixed-btn', activateScroll);
-    containerHeader.classList.toggle('container', activateScroll);
+    if (document.body.scrollTop > height_activate || document.documentElement.scrollTop > height_activate) {
+        button.classList.add("show");
+        header.classList.add("header-fixed", "fixed-bottom");
+    } else {
+        button.classList.remove("show");
+        header.classList.remove("header-fixed", "fixed-bottom");
+    }
 }
 
-const debouncedScroll = debounce(handleScroll, 300); // Retraso para evitar muchas ejecuciones
+const debouncedScroll = debounce(handleScroll, 100); // Retraso para evitar muchas ejecuciones
 window.onscroll = debouncedScroll;
 document.addEventListener('DOMContentLoaded', handleScroll);

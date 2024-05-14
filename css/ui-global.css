@@ -42,7 +42,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Public Sans", sans-serif;
   line-height: 1.5;
   font-size: 16px;
   overflow-x: hidden;
@@ -56,21 +56,27 @@ img {
 }
 h1 {
   font-size: 2.5rem;
+  font-family: "Titillium Web", sans-serif;
 }
 h2 {
   font-size: 2rem;
+  font-family: "Titillium Web", sans-serif;
 }
 h3 {
   font-size: 1.75rem;
+  font-family: "Titillium Web", sans-serif;
 }
 h4 {
   font-size: 1.5rem;
+  font-family: "Titillium Web", sans-serif;
 }
 h5 {
   font-size: 1.25rem;
+  font-family: "Titillium Web", sans-serif;
 }
 h6 {
   font-size: 1.125rem;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .mt-6 {
@@ -122,7 +128,6 @@ h6 {
   background-color: var(--color-white);
   color: var(--color-navy-main);
   border: 1px solid var(--color-white);
-  font-weight: 500;
 }
 .btn-navy-main-outline:active {
   background-color: var(--color-white);
@@ -147,6 +152,11 @@ h6 {
 }
 .btn-blue-main {
   background-color: var(--color-blue-main);
+  color: var(--color-white);
+  transition: 0.3s ease;
+}
+.btn-pink-main {
+  background-color: #ff8cc5;
   color: var(--color-white);
   transition: 0.3s ease;
 }
@@ -198,17 +208,17 @@ h6 {
   box-shadow: 5px 2px 20px -5px #00000050;
 }
 .bg-blue {
-  background-color: var(--color-blue-main-x);
+  background-color: var(--color-blue-main-x)!important;
 }
 .bg-bresh {
   background-color: var(--color-pink-bresh)!important;
-  color: var(--color-white);
+  color: var(--color-white)!important;
 }
 .color-blue {
-  color: var(--color-blue-main-x);
+  color: var(--color-blue-main-x)!important;
 }
 .color-navy-main {
-  color: var(--color-navy-main);
+  color: var(--color-navy-main)!important;
 }
 /* LINKS  A */
 a {

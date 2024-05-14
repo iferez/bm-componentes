@@ -86,6 +86,10 @@
   font-size: 24px;
   margin-bottom: 24px;
 }
+.bm-card-md p {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
 .bm-card-md span {
   font-size: 40px;
   font-weight: 700;
@@ -280,13 +284,25 @@
 }
 @media only screen and (min-width: 1200px) {
   .bm-bg-shape_left {
-    background-image: url(../img/circular-left-shape.png);
+    background-image: url("https://image.productos.bancomacro.com.ar/lib/fe3111737164047f771377/m/1/dcb23db8-bc23-471d-8782-0b6dd001021e.png");
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: left -50px top 90px;
   }
   .bm-bg-shape_right {
-    background-image: url(../img/circular-right-shape.png);
+    background-image:  url("https://image.productos.bancomacro.com.ar/lib/fe3111737164047f771377/m/1/96c0d2b6-5637-4cc7-a9c3-dd879d11dde7.png");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: right -100px top 0px;
+  }
+  .bm-bg-shape_left_bresh {
+    background-image: url("https://image.productos.bancomacro.com.ar/lib/fe3111737164047f771377/m/1/0b991263-1c83-4f4a-b0e8-fb4c22daf2aa.png");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: left -50px top 90px;
+  }
+  .bm-bg-shape_right_bresh {
+    background-image: url("https://image.productos.bancomacro.com.ar/lib/fe3111737164047f771377/m/1/17f45a5b-5e9a-4666-b2d9-76bb1559d319.png");
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: right -100px top 0px;

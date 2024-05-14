@@ -3,8 +3,12 @@
 }
 #bm-preguntas .accordion-header,
 #bm-preguntas .accordion-button {
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 600;
+}
+
+#bm-preguntas .accordion-body {
+  font-size: 16px
 }
 
 .accordion-button:not(.collapsed) {
@@ -19,6 +23,17 @@
   display: block;
   font-size: 18px;
   color: var(--color-navy-main);
+}
+
+@media only screen and (min-width: 768px) {
+  #bm-preguntas .accordion-header,
+  #bm-preguntas .accordion-button {
+    font-size: 24px;
+  }
+
+  #bm-preguntas .accordion-body {
+    font-size: 16px
+  }
 }
 
 @media only screen and (min-width: 1200px) {

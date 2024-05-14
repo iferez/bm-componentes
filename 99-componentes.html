@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Descripción de la página">
     <meta name="keywords" content="palabra1, palabra2, palabra3">
-    <title>Componentes</title>
+    <title>Abrí tu cuenta</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="css/master.css">
 </head>
@@ -14,7 +14,7 @@
 <body>
 
     <header>
-        <div class="container-header">
+        <div class="container">
             <img class="img-head-desktop" src="img/logo-blanco-sin-claim.png" alt="Logo Banco Macro">
             <img class="img-head-mobile" src="img/logomacromobile.png" alt="Logo Banco Macro Mobile">
             <a href="#" class="btn btn-navy-main-outline">Pedí tu cuenta ahora</a>
@@ -390,6 +390,94 @@
                 </div>
             </section>
 
+            <!-- SECCIÓN TABS -->
+            <section class="py-3 py-lg-5">
+                <div class="container">
+                    <h3 class="text-center color-navy-main my-5" data-aos="fade-up-right">Elegí tu mejor opción, para
+                        operar como quieras. <br> </h3>
+
+                    <article class="bm-tabs nav nav-pills d-flex flex-column flex-sm-row justify-content-center mb-5"
+                        data-aos="fade-up">
+                        <button class="nav-link active" id="pills-banco-chat-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-banco-chat" type="button" role="tab" aria-controls="pills-banco-chat"
+                            aria-selected="true">BancoChat</button>
+
+                        <button class="nav-link mt-3 mt-sm-0 ms-md-2" id="pills-app-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-app" type="button" role="tab" aria-controls="pills-app"
+                            aria-selected="false">App Macro</button>
+                    </article>
+
+                    <article class="tab-content pt-0 pt-md-4" id="pills-tabContent" data-aos="fade-up">
+                        <!-- TAB ABRI BANCO CHAT -->
+                        <div class="tab-pane fade show active" id="pills-banco-chat" role="tabpanel"
+                            aria-labelledby="pills-banco-chat-tab" tabindex="0">
+                            <div class="row bm-imagen-texto">
+                                <div class="col-md-5 text-center text-md-end">
+                                    <img src="https://image.productos.bancomacro.com.ar/lib/fe3111737164047f771377/m/1/a0873f1d-7794-48b3-b3d7-0e2820f5922f.png"
+                                        alt="Banco chat">
+                                </div>
+                                <div class="offset-md-1 col-md-6 mt-3 mt-md-0">
+                                    <h3 class="mb-4">Llegó <br> <span>BancoChat</span></h3>
+                                    <ul>
+                                        <li>Somos el primer banco que te trae una nueva forma de <strong>operar
+                                                desde WhatsApp.</strong>
+                                        </li>
+                                        <li>
+                                            Podés operar y dirigir todo por chat. <strong>Fácil, rápido y
+                                                seguro.</strong>
+                                        </li>
+                                        <li>Nuestro objetivo es llevar el banco donde está la gente y
+                                            ser
+                                            parte del día a día de los argentinos.
+                                        </li>
+                                    </ul>
+                                    <div class="mt-5">
+                                        <a data-utm="true"
+                                            href=" https://api.whatsapp.com/send/?phone=5491131101338&text=%C2%A1Quiero+usar+BancoChat%21&type=phone_number&app_absent=0"
+                                            class="btn btn-navy-main">Chatear ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB APP MACRO -->
+                        <div class="tab-pane fade" id="pills-app" role="tabpanel" aria-labelledby="pills-app-tab"
+                            tabindex="0">
+                            <div class="row bm-imagen-texto">
+                                <div class="col-md-5 text-center text-md-end">
+                                    <img src="https://image.productos.bancomacro.com.ar/lib/fe3111737164047f771377/m/1/36582071-4246-4dcf-948c-5f5dd9afedc2.png"
+                                        alt="App Macro">
+                                </div>
+                                <div class="offset-md-1 col-md-6 mt-3 mt-md-0">
+                                    <h3 class="mb-4">Descargá<br> <span>App Macro</span></h3>
+                                    <ul>
+                                        <li>Descargá la aplicación en tu celular para realizar
+                                            consultas y transacciones de manera simple, cómoda y segura
+                                            las 24hs, los 365 días del año.
+                                            <br><br>Hacé clic en los botones siguientes según
+                                            el sistema operativo de tu teléfono y seleccioná la
+                                            aplicación "Macro"
+                                        </li>
+                                    </ul>
+
+                                    <div
+                                        class="mt-5 d-flex flex-column justify-content-center flex-xl-row justify-content-xl-start">
+                                        <a data-utm="true" href="https://play.google.com/store/apps/details?id=ar.macro"
+                                            class="btn btn-bm-white"><i class="bi bi-google-play"></i> Google
+                                            Play</a>
+                                        <a data-utm="true"
+                                            href="https://apps.apple.com/app/apple-store/id1173611617?pt=2087826&ct=HaceteCliente-appmacro&mt=8"
+                                            class="btn btn-bm-white mt-3 mt-xl-0 ms-xl-4"><i class="bi bi-apple"></i>
+                                            Apple
+                                            Store</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
             <!-- SECCIÓN BANNER CARRUSEL -->
             <section>
                 <div class="container py-5 my-5">
@@ -579,6 +667,8 @@
     <script src="js/sliders.js"></script>
     <!-- Animaciones CSS JS -->
     <script src="js/aos.js"></script>
+    <!-- SCROLL FIXED HEADER -->
+    <script src="js/scroll-fix.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const pild = document.querySelector('.bm-pild-social');
@@ -591,8 +681,7 @@
             AOS.init();
         });
     </script>
-    <!-- SCROLL FIXED HEADER -->
-    <script src="js/scroll-fix.js"></script>
+
 
 </body>
 
