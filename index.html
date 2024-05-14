@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Descripción de la página">
     <meta name="keywords" content="palabra1, palabra2, palabra3">
-    <title>Abrí tu cuenta</title>
+    <title>BM componentes</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="css/master.css">
 </head>
@@ -17,7 +17,7 @@
         <div class="container">
             <img class="img-head-desktop" src="img/logo-blanco-sin-claim.png" alt="Logo Banco Macro">
             <img class="img-head-mobile" src="img/logomacromobile.png" alt="Logo Banco Macro Mobile">
-            <a href="#" class="btn btn-navy-main-outline">Pedí tu cuenta ahora</a>
+            <a data-utm="true" href="componentes" class="btn btn-navy-main-outline-blue">Pedí tu cuenta ahora</a>
         </div>
     </header>
     <main>
@@ -90,6 +90,62 @@
                             </div>
                         </div>
                     </article>
+                </div>
+            </section>
+
+            <!-- SECCIÓN NUEVOS BENEFICIOS -->
+            <section class="my-5">
+                <div class="container container_beneficios">
+                    <div class="row">
+                        <article class="col-lg-8 ms-3 ms-lg-0">
+                            <div id="slider-nuevo" class="row container_beneficio">
+                                <div class="col-lg-6 bm-card_beneficio">
+                                    <div class="bm-card_beneficio_img"><img src="img/PedidosYapequeño.png"
+                                            alt="Logo beneficio">
+                                    </div>
+                                    <h5>Hasta $1500 de <br>
+                                        ahorro mensual</h5>
+                                    <small>Vigencia del 01/01/2024 al 31/12/2024</small>
+                                </div>
+                                <div class="col-lg-6 bm-card_beneficio">
+                                    <div class="bm-card_beneficio_img"><img src="img/PedidosYapequeño.png"
+                                            alt="Logo beneficio">
+                                    </div>
+                                    <h5>Hasta $800 de <br>
+                                        ahorro mensual</h5>
+                                    <small>Vigencia del 01/01/2024 al 31/12/2024</small>
+                                </div>
+                                <div class="col-lg-6 bm-card_beneficio">
+                                    <div class="bm-card_beneficio_img"><img src="img/PedidosYapequeño.png"
+                                            alt="Logo beneficio">
+                                    </div>
+                                    <h5>Hasta $4500 de <br>
+                                        ahorro mensual</h5>
+                                    <small>Vigencia del 01/01/2024 al 31/12/2024</small>
+                                </div>
+                                <div class="col-lg-6 bm-card_beneficio">
+                                    <div class="bm-card_beneficio_img"><img src="img/PedidosYapequeño.png"
+                                            alt="Logo beneficio">
+                                    </div>
+                                    <h5>Hasta $1500 de <br>
+                                        ahorro mensual</h5>
+                                    <small>Vigencia del 01/01/2024 al 31/12/2024</small>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-lg-4 mt-5 mt-lg-0">
+                            <div class="bm-card_beneficio_destacado">
+                                <div class="bm-card_beneficio_img"><img src="img/PedidosYapequeño.png"
+                                        alt="Logo beneficio">
+                                </div>
+                                <h5>Hasta $1500 de <br>
+                                    ahorro mensual</h5>
+                                <small>Vigencia del 01/01/2024 al 31/12/2024</small>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, vitae! Lorem ipsum
+                                    dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
 
@@ -519,6 +575,33 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </button>
                     </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE BIG BANNER -->
+            <section class="my-5">
+                <style>
+                    @media (min-width: 992px) {
+                        .bm-big-banner {
+                            background-image: url('img/bigbanner.png')
+                        }
+                    }
+                </style>
+                <div class="container container_big-banner">
+                    <article class="bm-big-banner">
+                        <img src="img/bigbanner.png" alt="Mobile banner">
+                        <div class="bm-big-banner_container">
+                            <div class="bm-big-banner_text">
+                                <h4 class="fw-bold">Pedí tu Préstamo <br>
+                                    online sólo con DNI</h4>
+                                <p>Para todo eso que querés hacer, date el gusto ahora.</p>
+                                <small>Vigende desde el 10/12/2023 al 20/01/2025</small>
+                            </div>
+                            <div class="bm-big-banner_button">
+                                <a data-utm="true" href="#" class="btn btn-navy-main mt-3">Pedilo ahora</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
 
