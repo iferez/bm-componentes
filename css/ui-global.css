@@ -78,7 +78,15 @@ h6 {
   font-size: 1.125rem;
   font-family: "Titillium Web", sans-serif;
 }
-
+.pt-6 {
+  padding-top: 60px;
+}
+.pb-6 {
+  padding-bottom: 60px;
+}
+.py-6 {
+  padding: 60px 0;
+}
 .mt-6 {
   margin-top: 60px;
 }
@@ -180,6 +188,20 @@ h6 {
 .bg-sky-blue {
   background-color: var(--color-sky-blue);
 }
+.bg-section-grey {
+  background: #f8fafa;
+}
+.color-navy-main {
+  color: var(--color-navy-main);
+}
+.bm-title-navy {
+  color: var(--Primary-Navy-700, #053575);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0.2px;
+}
 
 /* WELCOME / BRESH - NO ALINEADO A DS VERIFICAR */
 .btn-bm-blue {
@@ -208,17 +230,17 @@ h6 {
   box-shadow: 5px 2px 20px -5px #00000050;
 }
 .bg-blue {
-  background-color: var(--color-blue-main-x)!important;
+  background-color: var(--color-blue-main-x) !important;
 }
 .bg-bresh {
-  background-color: var(--color-pink-bresh)!important;
-  color: var(--color-white)!important;
+  background-color: var(--color-pink-bresh) !important;
+  color: var(--color-white) !important;
 }
 .color-blue {
-  color: var(--color-blue-main-x)!important;
+  color: var(--color-blue-main-x) !important;
 }
 .color-navy-main {
-  color: var(--color-navy-main)!important;
+  color: var(--color-navy-main) !important;
 }
 /* LINKS  A */
 a {
@@ -238,10 +260,22 @@ a {
   box-shadow: 0px 0px 4px 0px #4447484d;
 }
 
-/* COLUMNAS DE BOOTSTRAP CENTRADAS */
+/* COLUMNAS - BOOTSTRAP GRID  */
 .col-center {
   display: flex;
   justify-content: center;
+}
+
+.container-md_stop {
+  max-width: 720px;
+}
+
+.container-lg_stop {
+  max-width: 960px;
+}
+
+.container-xl_stop {
+  max-width: 1140px;
 }
 
 /* SCROLL BTN */
@@ -272,6 +306,9 @@ a {
   /* Estilos para tabletas en modo retrato */
 }
 @media only screen and (min-width: 992px) {
+  .bm-title-navy {
+    font-size: 40px;
+  }
   /* ANIMAR IMG EN CONTENEDOR - MODULO TARJETAS */
   .img-animate img {
     transition: transform 0.5s ease-in-out;

@@ -64,11 +64,11 @@
   display: flex;
   justify-content: center;
   background-color: #fff;
-  border-radius: 150px;
+  border-radius: 12px;/*nuevo*/
   padding: 0.75rem 2rem;
-  box-shadow: 0px 4px 15px 0px #0808083c;
-  -webkit-box-shadow: 1px 4px 14px 0px #0808083c;
-  -moz-box-shadow: 1px 4px 14px 0px #0808083c;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .bm-pild-social img {
   max-width: 220px;
@@ -116,7 +116,7 @@
 }
 .bm-big-banner img {
   display: block;
-  max-height: 200px;
+  max-height: 400px;
 }
 
 .bm-big-banner_container {
@@ -142,7 +142,7 @@
   }
 
   .bm-big-banner img {
-    max-height: auto;
+    max-height: none;
   }
   .bm-banner-first h1 {
     font-size: 2.25rem;
@@ -248,7 +248,7 @@
   .bm-banner-first h2 {
     font-size: 3.125rem;
     margin-bottom: 16px;
-    line-height: 80px;
+    line-height: 64px;/*nuevo*/
   }
   .bm-banner-first h4 {
     font-size: 2rem;

@@ -44,10 +44,10 @@
   flex-direction: column;
   width: 230px;
   height: 100%;
-  min-height: 203px;
+  min-height: 200px;
   border-radius: 12px;
-  padding: 24px;
-  box-shadow: 0px 6px 10px 4px #7a7a7a26;
+  padding: 16px; /*TEST NUEVO*/
+  box-shadow: 0px 3px 4px 2px rgba(17, 17, 17, 0.15), 0px 2px 4px 0px rgba(68, 71, 72, 0.15);
   background-color: var(--color-white);
 }
 .bm-card-sm_header {
@@ -56,13 +56,19 @@
   align-items: center;
   margin-bottom: 16px;
 }
+.bm-card-sm_header img {
+  /*TEST NUEVO*/
+  max-height: 64px;
+  max-width: 64px;
+}
 .bm-card-sm_header h5 {
   font-size: 24px;
   margin: 0 0 0 16px;
   font-weight: 600;
-  color: var(--color-blue-main-x);
+  color: var(--color-navy-main);
 }
 .bm-card-sm_body p {
+  font-size: 14px; /*TEST NUEVO*/
   margin: 0;
 }
 /* SLIDER ACTIVO CARD SMALL */
@@ -290,7 +296,7 @@
     background-position: left -50px top 90px;
   }
   .bm-bg-shape_right {
-    background-image:  url("https://image.productos.bancomacro.com.ar/lib/fe3111737164047f771377/m/1/96c0d2b6-5637-4cc7-a9c3-dd879d11dde7.png");
+    background-image: url("https://image.productos.bancomacro.com.ar/lib/fe3111737164047f771377/m/1/96c0d2b6-5637-4cc7-a9c3-dd879d11dde7.png");
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: right -100px top 0px;
